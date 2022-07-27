@@ -18,5 +18,7 @@ split_bill = int(input("How many people to split the bills?\n"))
 # splitting the bill with how many people
 final_bill = round(total_with_tip / split_bill, 2)
 # final_bill is rounded with the method round, total_with_tip is divided by split_bill(number of people) and the int value of 2 to move the decimal 2 places to the right.
+final_bill = "{:.2f}". format(final_bill)
+# using this trick there will always be 2 decimal places
 print(f"Each person should pay ${final_bill}.")
 # final output ex: $00.00
